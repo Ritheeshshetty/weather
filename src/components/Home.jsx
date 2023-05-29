@@ -2,27 +2,24 @@ import React from 'react'
 import Spinner from './Spinner';
 
 const Home = (props) => {
+    // used to fetch data based on user input 
     const handlesubmit=(e)=>{
         if(e.key==='Enter'){
             e.preventDefault();
         props.display()
         props.setLocation('')
     }
-    // else{
-    //     props.display()
-    // }
     }
   return (
     <>
         <div className='home'>
-            {props.data.name===undefined?<Spinner/>:""}
+            {props.data.name===undefined?<Spinner/>:""}{/* only uses loading screen when data is being fetched */}
         {props.data.name!==undefined&&
             <div className="container">
             
                 <div className="search">
                 <form action="">
                     <input type="text" placeholder='search' value={props.location} onChange={e=>props.setLocation(e.target.value)} onKeyDown={(e) => handlesubmit(e)} autoFocus={'on'}/>
-                    {/* <input type="button" value="search" onClick={handlesubmit}/> */}
                 </form>
                 </div>
          
@@ -36,9 +33,7 @@ const Home = (props) => {
                     </div>
                     
                     <div className="description">
-                        {/* {props.data.weather?<p>{props.data.weather.map((Data)=>{return Data.main})}</p>:null} */}
                         {props.data.weather?<p>{props.data.weather[0].main}</p>:null}
-                        {/* {props.data.weather.main} */}
                     </div>
                 </div>
                 
