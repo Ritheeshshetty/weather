@@ -138,7 +138,7 @@ input[type]:focus{
     word-wrap: break-word;
     text-align: justify;
   }
-  .about h1{
+  .about h2{
     text-align: center;
     margin-bottom: 2%;
     animation: demo3 1s ease-in-out ;
@@ -414,5 +414,15 @@ input[type]:focus{
     100% {
       transform: scale(1);
       opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    .about h2{
+      font-size: 2rem;
+      padding-top: 100px;
+    }
+    .about p{
+      font-size: 1rem;
     }
   }

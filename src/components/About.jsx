@@ -3,16 +3,11 @@ import React from 'react'
 const About = () => {
   return (
     <div className='about'>
-      <h1 className='head'>About Website</h1>
-        <p>Welcome to our note-taking website! We've built this platform with the goal of providing you with a secure and intuitive way to manage your notes.
-
-Our website is built using modern frontend technologies such as HTML, CSS, JavaScript, and React. We've designed our user interface with simplicity and ease of use in mind, so you can quickly and easily create, edit, and delete notes.
-
-To ensure the security of your data, we've implemented a backend using Node.js, a powerful and flexible server-side runtime for JavaScript. We've also chosen MongoDB as our database technology, which provides high-performance, scalable, and flexible data storage.
-
-With our website, you can trust that your notes are safely stored and protected with secure authentication. Our platform offers you the convenience and flexibility to access your notes from anywhere, at any time.
-
-We're dedicated to providing you with the best note-taking experience possible. If you have any questions or feedback, please don't hesitate to contact us using the provided contact form. We hope you enjoy using our website!</p>
+      <h2 className='head'>About Website</h2>
+        <p>Welcome to weather app, i made this app by using frontend technologies like HTML,CSS,JS and js framework REACT.JS.<br/><br/>
+            I have made this project by utilizing important concepts of react such as,<br/>(i)&nbsp;implemeting react lifecycle methods,<br/>(ii)&nbsp;created reusable functional based components using JSX,<br/>(iii)&nbsp;Utilized props to pass data between components,<br/>(iv)&nbsp;Fetched data from the  Weather API and handled potential errors,<br/>(v)&nbsp;Implemented a form where users can submit their city and fetches the current weather for that city using the Weather API,<br/>(vi)&nbsp;Used conditional rendering to display a loading message while the API data is being fetched.<br/>(vi)&nbsp;Implemented basic routing in this application.
+            
+        </p>
     </div>
   )
 }
